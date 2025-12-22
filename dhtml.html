@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is text</h1>
+    <button onclick="document.querySelector('h1').innerHTML='Hello Krishna'">change text</button>
+
+    <img width="100" src="https://tse4.mm.bing.net/th/id/OIP.Vgu6RKR-NRkC_Ab_J7BCjgHaE7?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+    <button onclick="document.querySelector('img').src='https://portal.icatcare.org/images/sales/product/f48282d3-c4a8-41a8-bea4-b86e147b2147/thumbnail/XejOzMBh7kLdUc2iP6jZ7ajtvQBDjWmXODAT5qyG.png'">cat</button>
+
+
+
+
+    <img src="https://tse3.mm.bing.net/th/id/OIP.yoksNYQ2MCvT37LZaOi64AHaEJ?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+    <button onclick="document.querySelector('img').src='https://tse1.mm.bing.net/th/id/OIP.VM6NojU3svt85CtR3u4J0AHaHk?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'">light on</button>
+
+
+    <hr>
+    <input type="password" name="" id="a">
+    <button onclick="abc()" id="btn">Show</button>
+<script>
+    function abc(){
+        if(document.querySelector('#a').type=='password'){
+            document.querySelector('#a').type='text';
+            document.querySelector('#btn').innerHTML="hide"
+        }
+        else
+        {
+            document.querySelector('#a').type='password';
+            document.querySelector('#btn').innerHTML="show"
+        }
+    }
+</script>
+</body>
+</html>

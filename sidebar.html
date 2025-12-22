@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        aside{
+            width: 200px;
+            background-color: green;
+            height: 100vh;
+            position: fixed;
+            left: -200px;
+            top: 0;
+            transition: 2s;
+        }
+        .m{
+            left: 0;
+
+        }
+        .ml{
+            margin-left: 200px;
+
+        }
+button{
+    transition: 2s;
+}    </style>
+</head>
+<body>
+    <button onclick="aa()">Menu</button>
+    <aside></aside>
+
+    <script>
+        function aa(){
+            document.querySelector('aside').classList.toggle('m')
+            document.querySelector('button').classList.toggle('ml')
+
+        }
+    </script>
+    
+</body>
+</html>

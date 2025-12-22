@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aa{
+            background-color: green;font:black;font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demp"><h1>this is demo</h1></div>
+
+
+    <button onclick="document.querySelector('.demp').style.display='none'">Hide</button>
+    <button onclick="document.querySelector('.demp').style.display='block'">show</button>
+
+    <button onclick="document.querySelector('.demp').style.background='yellow'">bg</button>
+
+    <button onclick="document.querySelector('.demp').style.color='red'">Color</button>
+    <button onclick="document.querySelector('.demp').style.fontSize='88px'">increase size</button>
+
+    <button onclick="document.querySelector('.demp').style.marginLeft='200px'">m-left</button>
+
+    <button onclick="sabai()">All</button>
+
+
+    <button onclick="document.querySelector('.demp').classList.add=('aa')">add class</button>
+    <button onclick="document.querySelector('.demp').classList.remove=('aa')">Removingclass</button>
+
+    <button onclick="document.querySelector('.demp').classList.toggle=('aa')">toggle</button>
+
+
+    <script>
+        function sabai(){
+            document.querySelector('.demp').style.color="blue"
+            document.querySelector('.demp').style.background="red"
+            document.querySelector('.demp').style.fontSize="140px"
+
+
+        }
+    </script>
+
+</body>
+</html>

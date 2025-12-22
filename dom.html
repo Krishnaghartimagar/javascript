@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is first heading</h1>
+    <h1>This is seaacond heading</h1>
+    <div class="demo">This is class parts</div>
+<div id="demo">This is id</div>
+<script>
+    let a=document.getElementsByTagName('h1')[0].innerHTML
+    console.log(a);
+
+    let d=document.getElementsByTagName('h1')[1].innerHTML
+    console.log(d);
+
+    let b=document.getElementsById('demo').innerHTML
+    console.log(b);
+
+
+    let c=document.getElementsByClassName('demo')[0].innerHTML
+    console.log(c);
+
+
+
+    //query selector
+
+    console.log(document.querySelector('h1').innerHTML)
+    console.log(document.querySelectorAll('h1')[1].innerHTML)
+    console.log(document.querySelector('.demo').innerHTML)
+
+    console.log(document.querySelector('#demo').innerHTML)
+
+
+</script>
+</body>
+</html>

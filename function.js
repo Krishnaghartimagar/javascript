@@ -1,0 +1,1 @@
+console.log("my name is krishna gharti magar ")
