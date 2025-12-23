@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1900px;
+        }
+        header{
+            width: 100%;
+       height: 50px; 
+       background-color: red;
+    }
+    .sticky{
+        background-color: green;
+        padding: 100px;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .sticky1{
+        display: block;
+    }
+    img{
+        display: none;
+        width: 40px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+    .box{
+        background-color: black;
+        width: 50px;
+        height: 20px;
+        margin: 2px;
+        display: none;
+    }
+    .sticky2{
+        display: block;
+    }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="logo">
+        <img src="https://images.squarespace-cdn.com/content/v1/5fb594a031aa016882359a78/1677271866633-23A2QI678INFCORMS7S7/Lion.jpg">
+    </div>
+    <div class="aa">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll',()=>{
+            if(scrollY >100)
+        {
+document.querySelector('header').classList.add('sticky')
+        document.querySelector('img').classList.add('sticky1')
+
+        documet.querySelector('aa').classList.add('sticky2')
+
+        }
+        else
+        {
+document.querySelector('header').classList.remove('sticky')
+        document.querySelector('img').classList.remove('sticky1')
+                documet.querySelector('aa').classList.remove('sticky2')
+
+
+
+
+        }
+
+        })
+    </script>
+</body>
+</html>

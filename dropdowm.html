@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        ul{
+            list-style: none;
+        }
+        .sub{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Anout us
+            <ul class="sub">
+
+            <!-- onclick="abc()" and fron function  -->
+                <li>Mission</li>
+        <li>Vission</li>
+
+
+            </ul>
+        </li>
+        <li>services</li>
+
+    </ul>
+    <script>
+        document.querySelector('ul').addEventListener('click',()=>{
+            document.querySelector('.sub').classList.toggle('show')
+        })
+    </script>
+</body>
+</html>
