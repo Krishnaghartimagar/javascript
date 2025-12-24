@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+body{
+    height: 1900px;
+    margin: 0;
+}
+
+/* HEADER */
+header{
+    background-color: green;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    transition: 0.3s;
+}
+
+.aa{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    background-color:rgb(36, 54, 9) ;
+}
+
+/* SIDEBAR */
+aside{
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(105, 27, 55);
+    position: fixed;
+    top: 40px;
+    left: -200px;
+    transition: 0.5s;
+}
+
+aside.m{
+    left: 0;
+}
+
+/* BUTTON */
+button{
+    transition: 0.5s;
+}
+
+button.ml{
+    margin-left: 210px;
+}
+.sub{
+    display: none;
+}
+ul{
+    list-style: none;
+    color: white;
+}
+.main{
+    margin: 20px 20px;
+}
+ .sub{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+</style>
+</head>
+
+<body>
+
+<header>
+    Hello I am Krishna Gharti Magar
+</header>
+
+<aside>
+<ul class="main">
+    <li>Home</li>
+    <li>about us</li>
+    <li>services
+        <ul class="sub">
+            <li>web developement</li>
+            <li>mobile application</li>
+        </ul>
+    </li>
+    <li>cotact us</li>
+</ul>
+</aside>
+
+<button onclick="abc()">Menu</button>
+
+<script>
+window.addEventListener('scroll',()=>{
+    if(window.scrollY > 40){
+        document.querySelector('header').classList.add('aa');
+    }else{
+        document.querySelector('header').classList.remove('aa');
+    }
+});
+
+function abc(){
+    document.querySelector('aside').classList.toggle('m');
+    document.querySelector('button').classList.toggle('ml');
+}
+document.querySelector('ul').addEventListener('click',()=>{
+            document.querySelector('.sub').classList.toggle('show')
+        })
+</script>
+
+</body>
+</html>
