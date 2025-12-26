@@ -27,6 +27,10 @@ setTimeout(()=>{
 
 console.log("eat food")
 
+setTimeout(()=>{
+    console.log("this is me ")
+},3000) 
+
 //online ticketing of movie is asynchronou 
 //lining in offline ickting is synchronous
 

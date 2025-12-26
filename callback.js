@@ -55,10 +55,12 @@ function fu(a, callback) {
 
 function na(ut) {
     let l = ut.length;
-    console.log(l);
+    console.log(ut,l);
 }
 
 fu("krishna", na);
+
+
 
 
 
