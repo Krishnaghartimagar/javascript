@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script type="module">
+            import myfunction from './module1.js';
+            console.log(myfunction())
+
+
+            //array destrcturing
+            let fruits=['apple','kiwi','banana','mango','pineapple']
+            console.log(fruits[3]);
+            let [aa,b,c,...d]=fruits
+
+            console.log(b,c);
+            console.log(d);
+
+    //... this is rest operator
+
+    //object destracturing
+
+    let product={
+        id:1,
+        title:"p2",
+        price:22
+    }
+    let{id,title,price}=product
+    console.log(title);
+
+    //sperad operator
+
+    let aaa=['aa','bb','cc','dd']
+    let s=['mm','nn','oo','pp']
+
+    console.log([...aaa,...s]);
+
+    //react is the library of javascript single page application ma whloe refresh hudoin change inside content 
+    //while header and footer are same it dont change
+
+    //next js ---->backend+fromtend in same platform. this is react famework
+
+
+    //react--->front end ,library of js and  singal page application
+        </script>
+    </body>
+    </html>

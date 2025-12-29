@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- cdn from react -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- babel is use to run the html code inside the copmonent -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+
+
+</head>
+<body>
+    <div id="root"></div>
+    <div class="root"></div>
+    <script type="text/babel">
+        let full_name=<h1>krishna gharti magar</h1>//jsx:allow html code in javascript cde
+        //babel js a widle use js compailer
+function Header() {
+    return <><h1>this is header</h1></>
+}
+
+        function Br(){ //aagadi ko capital letter
+            return <><h1>krishna gharti magar </h1><h1>hello app</h1> <Header/> <Header/> <Header/> <Add/></>
+            //in react component return the html elements it is like a function
+        }
+
+        function Add() {
+            let a=8;
+            let b=8;
+            return a+b;
+        }
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<Br/>)
+        //render is use for printing
+      
+        
+        
+    </script>
+    
+</body>
+</html>
